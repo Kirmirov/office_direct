@@ -1,0 +1,5 @@
+.header-logo__text {
+	@include font (normal, 1rem, 1.50);
+	text-align: center;
+	text-transform: uppercase;
+}

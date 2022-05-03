@@ -1,0 +1,10 @@
+.header-basket__text {
+  margin-right: .65rem;
+  @include font (500, 1.6rem, 1.40);
+}
+
+@media (max-width: 48em) {
+	.header-basket__text {
+		display: none;
+	}
+}

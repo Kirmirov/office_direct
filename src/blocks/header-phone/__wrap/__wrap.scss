@@ -1,0 +1,9 @@
+.header-phone__wrap {
+	@include vercen;
+}
+
+@media (max-width: 48em) {
+	.header-phone__wrap {
+		display: none;
+	}
+}
