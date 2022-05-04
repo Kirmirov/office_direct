@@ -1,0 +1,13 @@
+.delivery__block-center {
+	width: 33rem;
+	padding-right: 2rem;
+	& .delivery__img-wrap {
+		padding-right: 0.5rem;
+	}
+	& .delivery__title {
+		padding-right: 3rem;
+	}
+	& .delivery__link {
+		padding-right: 3rem;
+	}
+}

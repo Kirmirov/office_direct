@@ -1,6 +1,7 @@
 .button__header {
 	@include font (500, 1.6rem, 1.40);
-	padding: 1.35rem 2.85rem 1.55rem;
+	padding: 1.35rem 3.3rem 1.55rem;
+	border-radius: .8rem;
 }
 
 @media (max-width: 48em) {

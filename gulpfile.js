@@ -1,41 +1,40 @@
 // VARIABLES & PATHS
 let preprocessor = 'sass',
-  fileswatch = 'html,htm,txt,json,md,woff2',
-  baseDir = 'src',
-  imageswatch = 'jpg,jpeg,png,webp,svg',
-  online = true;
+	fileswatch = 'html,htm,txt,json,md,woff2',
+	baseDir = 'src',
+	imageswatch = 'jpg,jpeg,png,webp,svg',
+	online = true;
 
 let paths = {
 
-  styles: {
-    src: baseDir + '/blocks/**/style.*',
-    dest: baseDir + '/css',
-  },
+	styles: {
+		src: baseDir + '/blocks/**/style.*',
+		dest: baseDir + '/css',
+	},
 
-  images: {
-    src: baseDir + '/original-img/**/*',
-    dest: baseDir + '/img',
-  },
+	images: {
+		src: baseDir + '/original-img/**/*',
+		dest: baseDir + '/img',
+	},
 
-  cssOutputName: 'style.css',
-
-}
+	cssOutputName: 'style.css',
+};
 
 // LOGIC
 const {
-  src,
-  dest,
-  parallel,
-  series,
-  watch
+	src,
+	dest,
+	parallel,
+	series,
+	watch
 } = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
-const newer = require('gulp-newer');
-const imagemin = require('gulp-imagemin');
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCss = require('gulp-clean-css');
+const sass 			= require('gulp-sass')(require('sass'));
+const concat 		= require('gulp-concat');
+const browserSync 	= require('browser-sync').create();
+const newer 		= require('gulp-newer');
+const imagemin 		= require('gulp-imagemin');
+const autoprefixer 	= require('gulp-autoprefixer');
+const cleanCss 		= require('gulp-clean-css');
 
 function browsersync() {
   browserSync.init({
@@ -44,7 +43,7 @@ function browsersync() {
     },
     notify: false,
     online: online
-  })
+  });
 }
 
 function styles() {
@@ -70,7 +69,7 @@ function images() {
 function cleanimg() {
   return del('' + paths.images.dest + '/**/*', {
     force: true
-  })
+  });
 }
 
 function startwatch() {
@@ -86,8 +85,8 @@ function startwatch() {
 }
 
 exports.browsersync = browsersync;
-exports.assets = series(styles, images);
-exports.styles = styles;
-exports.images = images;
-exports.images = cleanimg;
-exports.default = parallel(images, styles, browsersync, startwatch);
+exports.assets 		= series(styles, images);
+exports.styles 		= styles;
+exports.images 		= images;
+exports.images 		= cleanimg;
+exports.default 	= parallel(images, styles, browsersync, startwatch);

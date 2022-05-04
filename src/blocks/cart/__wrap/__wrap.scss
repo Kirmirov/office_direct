@@ -1,0 +1,20 @@
+.cart__wrap {
+	width: 28.1rem;
+	min-height: 54.5rem;
+	flex-shrink: 0;
+	@include centered;
+	flex-direction: column;
+	flex-shrink: 0;
+	text-align: center;
+	&:hover {
+		min-height: 70.1rem;
+		border: .1rem solid #F3F4F7;
+		box-shadow: 0 2rem 5.2rem -.8rem rgba(0, 0, 0, 0.15);
+		border-radius: 1.6rem;
+		padding-bottom: 4.7rem;
+		margin-left: -2rem;
+		& .button__cart {
+			display: block;
+		}
+	}
+}
