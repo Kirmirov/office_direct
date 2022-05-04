@@ -1,11 +1,13 @@
-.delivery__block-left {
-	width: 41.5rem;
-	padding-right: 3.7rem;
-	& .delivery__img-wrap {
-		padding-right: 1rem;
-	}
-	& .delivery__link {
-		padding-right: 0.5rem;
+@media (min-width: 48em) {
+	.delivery__block-left {
+		width: 41.5rem;
+		padding-right: 3.7rem;
+		& .delivery__img-wrap {
+			padding-right: 1rem;
+		}
+		& .delivery__link {
+			margin-right: 0.5rem;
+		}
 	}
 }
 

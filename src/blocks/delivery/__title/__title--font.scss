@@ -2,3 +2,9 @@
 	@include font (500, 2.2rem, 1.50);
 	color: $main-text-color;
 }
+
+@media (max-width: 48em) {
+	.delivery__title--font {
+		@include font (500, 3.2rem, 1.50);
+	}
+}

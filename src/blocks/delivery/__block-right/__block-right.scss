@@ -1,13 +1,15 @@
-.delivery__block-right {
-    width: 36rem;
-	padding-right: 2.5rem;
-	& .delivery__img-wrap {
-		padding-left: 4rem;
-	}
-	& .delivery__title {
-		padding-left: 1rem;
-	}
-	& .delivery__link {
-		padding-left: 1rem;
+@media (min-width: 48em) {
+	.delivery__block-right {
+		width: 36rem;
+		padding-right: 2.5rem;
+		& .delivery__img-wrap {
+			padding-left: 4rem;
+		}
+		& .delivery__title {
+			padding-left: 1rem;
+		}
+		& .delivery__link {
+			margin-left: 1rem;
+		}
 	}
 }

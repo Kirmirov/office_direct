@@ -2,4 +2,13 @@
 	font-family: 'Manrope';
 	@include font (400, 1.5rem, 1.50);
 	color: #959AAE;
+	border-bottom: 1px dashed #959AAE;
+}
+
+@media (max-width: 48em) {
+	.delivery__link {
+		@include font (400, 2.8rem, 1.50);
+		margin-left: 13rem;
+    	margin-top: -3.5rem;
+	}
 }

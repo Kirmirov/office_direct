@@ -1,3 +1,10 @@
 .delivery__title {
 	margin-bottom: 1.3rem;
 }
+
+@media (max-width: 48em) {
+	.delivery__title {
+		width: 55rem;
+		margin-bottom: 5.3rem;
+	}
+}

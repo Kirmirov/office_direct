@@ -1,3 +1,10 @@
 .delivery__img-wrap {
 	margin-bottom: 1.8rem;
 }
+
+@media (max-width: 48em) {
+	.delivery__img-wrap {
+		margin-right: 2rem;
+		margin-bottom: 3.3rem;
+	}
+}
