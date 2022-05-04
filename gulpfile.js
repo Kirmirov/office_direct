@@ -57,14 +57,14 @@ function styles() {
     }))
     .pipe(cleanCss())
     .pipe(dest(paths.styles.dest))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 }
 
 function images() {
   return src(paths.images.src)
     .pipe(newer(paths.images.dest))
     .pipe(imagemin())
-    .pipe(dest(paths.images.dest))
+    .pipe(dest(paths.images.dest));
 }
 
 function cleanimg() {
