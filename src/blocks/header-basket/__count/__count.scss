@@ -1,3 +1,9 @@
 .header-basket__count {
 	@include font (bold, 1.2rem, 1.40);
 }
+
+@media (max-width: 48em) {
+	.header-basket__count {
+		@include font (800, 1.6rem, 1.70);
+	}
+}

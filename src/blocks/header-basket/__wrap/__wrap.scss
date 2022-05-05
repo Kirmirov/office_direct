@@ -2,3 +2,10 @@
 	@include vercen;
   	flex-shrink: 0;
 }
+
+@media (max-width: 48em) {
+	.header-basket__wrap {
+		position: relative;
+		margin-top: 2rem;
+	}
+}
