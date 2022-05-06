@@ -7,8 +7,8 @@
 
 @media (max-width: 48em) {
 	.delivery__link {
-		@include font (400, 2.8rem, 1.50);
-		margin-left: 13rem;
-    	margin-top: -3.5rem;
+		@include font (400, 2.5rem, 1.50);
+		margin-left: 11rem;
+    	margin-top: -4rem;
 	}
 }

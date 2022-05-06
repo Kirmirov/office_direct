@@ -1,0 +1,10 @@
+.catalog__more {
+	@include centered;
+	padding: 2.4rem 0 2.6rem 0;
+}
+
+@media (max-width: 48em) {
+	.catalog__more {
+		padding: 4rem 0 4rem 0;
+	}
+}

@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/main.js" defer></script>
 	<title>Office Direct</title>
 </head>
 <body>
@@ -76,6 +77,7 @@
 	</header>
 
 	<main class="main">
+
 		<section class="delivery">
 			<div class="container">
 				<div class="delivery__wrap">
@@ -111,22 +113,28 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="catalog">
 			<div class="container">
 
 				<h2 class="title title__document">Каталог кресел</h2>
 				<div class="catalog__wrap">
 
-					<a href="#" class="cart cart__wrap">
-						<div class="cart__img">
-							<img src="img/cart/kl-104.png" alt="">
+					<a href="#" class="cart cart--relative">
+						<div class="cart__wrap">
+							<div class="cart__img">
+								<img src="img/cart/kl-104.png" alt="">
+							</div>
+							<div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
+							<div class="cart__coin-new">23 000 ₽</div>
+							<div class="cart__coin-old">27 000 ₽</div>
+							<button class="button__cart button__cart--color" type="submit">Добавить в корзину</button>
 						</div>
-						<div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-						<div class="cart__coin-new">23 000 ₽</div>
-						<div class="cart__coin-old">27 000 ₽</div>
-						<button class="button__cart button__cart--color" type="submit">Добавить в корзину</button>
 					</a>
 
+				</div>
+				<div class="catalog__more catalog__more--style">
+					<button class="button__more button__more--color" type="button">Показать все</button>
 				</div>
 			</div>
 		</section>
