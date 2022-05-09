@@ -1,6 +1,7 @@
 .cart__coin-old {
 	@include font (700, 2rem, 1.40);
 	color: $main-text-color;
+	position: relative;
 }
 
 @media (max-width: 48em) {

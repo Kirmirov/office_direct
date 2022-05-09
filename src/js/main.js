@@ -11,4 +11,5 @@ const printElem = (elemClass, elemCount) => {
 	} 
 };
 
+
 printElem('a.cart', 7);
