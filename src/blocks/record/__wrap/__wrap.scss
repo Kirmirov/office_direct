@@ -1,6 +1,11 @@
 .record__wrap {
 	display: flex;
-	height: 51.3rem;
-	background-image: url('img/record/back.png');
-	background-size: cover;
+	position: relative;
+}
+
+@media (max-width: 48em) {
+	.record__wrap {
+		flex-direction: column;
+		align-items: center;
+	}
 }

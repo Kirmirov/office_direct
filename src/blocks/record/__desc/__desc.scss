@@ -1,0 +1,14 @@
+.record__desc {
+	@include font (400, 1.9rem, 1.60);
+	width: 56rem;
+    margin-bottom: 2.7rem;
+}
+
+
+@media (max-width: 48em) {
+	.record__desc {
+		@include font (400, 2.9rem, 1.50);
+		width: 60rem;
+		margin-bottom: 4.7rem;
+	}
+}

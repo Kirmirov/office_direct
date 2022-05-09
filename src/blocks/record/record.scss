@@ -1,3 +1,14 @@
 .record {
-	padding: 3.5rem 0 10.8rem 0;
+	background-image: url('../img/record/back.png');
+	background-position: center center;
+	background-size: cover;
+	padding-bottom: 10.8rem;
+	margin-top: 8.8rem;
+	height: 60rem;
+}
+
+@media (max-width: 48em) {
+	.record {
+		height: 160rem;
+	}
 }
