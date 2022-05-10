@@ -13,3 +13,32 @@ const printElem = (elemClass, elemCount) => {
 
 
 printElem('a.cart', 7);
+
+
+const selectControl = (selectID) => 
+{
+	const select 		= document.querySelector(selectID),
+		selectHeader 	= select.querySelector('.select__header'),
+		selectBody 		= select.querySelector('.select__body'),
+		headerTitle 	= selectHeader.querySelector('.select__title');
+
+	const toggleSelect = () => {
+		selectHeader.classList.toggle('select__header--active');
+		selectBody.classList.toggle('select__body--active');
+	};
+
+	selectHeader.addEventListener('click', () => {
+		toggleSelect();
+	});
+
+	selectBody.addEventListener('click', (evt) => {
+		if (evt.target.matches('.select__item'))
+		{
+			headerTitle.innerText = evt.target.innerText;
+			toggleSelect();
+		}
+	});
+};
+
+
+selectControl('#select1');

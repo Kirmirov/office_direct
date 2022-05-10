@@ -1,0 +1,15 @@
+.select__header--active {
+	display: flex;
+    justify-content: space-between;
+	padding: 1rem 3rem 1rem 3rem;
+    border: 0.2rem solid #2F80ED;
+    box-shadow: 0 .5rem 1rem rgb(47 128 237 / 15%);
+    border-radius: .8rem;
+    width: 21.5rem;
+    z-index: 31;
+    position: inherit;
+
+	& .select__img {
+		transform: rotate(180deg);
+	}
+}

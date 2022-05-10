@@ -1,0 +1,4 @@
+.select__header {
+	@include vercen;
+	transition: padding .3s ease-in-out;
+}
