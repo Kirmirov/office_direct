@@ -1,18 +1,18 @@
 'use strict'
 
-const printElem = (elemClass, elemCount) => {
+const copyElem = (elemClass, elemCount) => {
 	const foundElem = document.querySelector(elemClass);
 	
 	for (let i = 0; i < elemCount; i++)
 	{
 		let elem = foundElem.cloneNode(true);
-		elem.querySelector('img').setAttribute('src', 'img/cart/kl-105.png');
+		// elem.querySelector('img').setAttribute('src', 'img/cart/kl-105.png');
 		foundElem.after(elem);
 	} 
 };
 
 
-printElem('a.cart', 7);
+copyElem('a.cart', 7);
 
 
 const selectControl = (selectID) => 
@@ -24,7 +24,9 @@ const selectControl = (selectID) =>
 
 	const toggleSelect = () => {
 		selectHeader.classList.toggle('select__header--active');
-		selectBody.classList.toggle('select__body--active');
+		setTimeout(() => {
+			selectBody.classList.toggle('select__body--active');
+		}, selectBody.classList.contains('select__body--active') ? 0 : 300);
 	};
 
 	selectHeader.addEventListener('click', () => {

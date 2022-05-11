@@ -1,10 +1,10 @@
-.header-phone__wrap {
+.header-phone-wrap {
 	@include vercen;
 	padding-right: 1.7rem;
 }
 
 @media (max-width: 48em) {
-	.header-phone__wrap {
+	.header-phone-wrap {
 		display: none;
 	}
 }

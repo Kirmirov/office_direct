@@ -1,9 +1,9 @@
-.title__document {
+.titl-document {
 	@include font (900, 4.4rem, 1.20);
 }
 
 @media (max-width: 48em) {
-	.title__document {
+	.title-document {
 		@include font (900, 5.6rem, 1.20);
 	}
 }

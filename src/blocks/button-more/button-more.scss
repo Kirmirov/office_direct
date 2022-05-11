@@ -1,0 +1,15 @@
+.button-more {
+	@include font (600, 1.8rem, 1.30);
+	color: #191E32;
+	border-radius: .8rem;
+	@include centered;
+	padding: 2.4rem 0 2.6rem 0;
+	width: 100%;
+}
+
+@media (max-width: 48em) {
+	.button-more {
+		@include font (600, 3.3rem, 1.30);
+		padding: 4rem 0 4rem 0;
+	}
+}
