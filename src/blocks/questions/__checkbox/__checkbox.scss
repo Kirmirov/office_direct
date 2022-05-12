@@ -1,0 +1,33 @@
+.questions__checkbox {
+	position: absolute;
+  	z-index: -1;
+	opacity: 0;
+	&+.questions__label{
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+	}
+	&+.questions__label::before{
+		content: '';
+		display: inline-block;
+		width: 2rem;
+		height: 2rem;
+		flex-shrink: 0;
+		flex-grow: 0;
+		border: .1rem solid #6F7487;
+		border-radius: 0.5rem;
+		margin-right: 1.8rem;
+		background: #576077;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50% 50%;
+	}
+
+	&:checked+.questions__label::before {
+		border-color: #2F80ED;
+		background-color: #2F80ED;
+		background-image: url("..img/questions/check.svg");
+	}
+	
+}
+

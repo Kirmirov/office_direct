@@ -1,0 +1,16 @@
+.questions__input {
+	width: 100%;
+	height: 100%;
+	padding-left: 7rem;
+	@include font (500, 1.8rem, 1.24);
+	border-radius: 0.8rem;
+	border: .1rem solid rgba(255, 255, 255, 0.3);
+	box-shadow: 0 .6rem 1.6rem rgba(255, 255, 255, 0.08);
+	color: #FFFFFF;
+	&::-moz-placeholder {
+		color: #FFFFFF;
+	}
+	&::-webkit-input-placeholder {
+		color: #FFFFFF;
+	}
+}
