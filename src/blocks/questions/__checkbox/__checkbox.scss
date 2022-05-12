@@ -25,8 +25,11 @@
 
 	&:checked+.questions__label::before {
 		border-color: #2F80ED;
-		background-color: #2F80ED;
-		background-image: url("..img/questions/check.svg");
+		background: #2F80ED url("../img/questions/check.svg") no-repeat center / 1rem;
+	}
+
+	&:not(:disabled):not(:checked)+.questions__label:hover::before {
+		background: #FFFFFF;
 	}
 	
 }
