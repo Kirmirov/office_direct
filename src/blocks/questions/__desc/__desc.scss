@@ -4,3 +4,11 @@
 	@include font (300, 2.6rem, 1.50);
 	color: #FFF;
 }
+
+@media (max-width: 48em) {
+	.questions__desc {
+		width: 58rem;
+		font-size: 3rem;
+		margin-bottom: 3rem;
+	}
+}

@@ -4,7 +4,17 @@
 	background-size: cover;
 	padding-bottom: 10.8rem;
 	margin-top: 8.8rem;
-	padding: 13.8rem 0 9.9rem 0;
+	padding: 13.4rem 0 9.9rem 0;
 	border-radius: 1.6rem;
 	margin: 0 6rem;
+	position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 48em) {
+	.questions {
+		margin: 0;
+    	border-radius: 0;
+		padding: 13.4rem 0 11rem 0;
+	}
 }

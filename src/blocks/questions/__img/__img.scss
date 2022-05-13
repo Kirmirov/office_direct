@@ -5,3 +5,9 @@
     top: -35.3rem;
     right: -13.9rem;
 }
+
+@media (max-width: 48em) {
+	.questions__img {
+		display: none;
+	}
+}

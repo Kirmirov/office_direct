@@ -1,3 +1,14 @@
 .questions__align {
 	@include horspace;
 }
+
+@media (max-width: 48em) {
+	.questions__align {
+		@include vercen;
+		flex-direction: column;
+	}
+
+	.questions__align > button {
+		width: 50rem;
+	}
+}

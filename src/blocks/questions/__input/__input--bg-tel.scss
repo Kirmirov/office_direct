@@ -5,3 +5,11 @@
 	background-position-y: 50%;
 	background-size: 2.5rem;
 }
+
+@media (max-width: 48em) {
+	.questions__input--bg-tel {
+		background-position-x: 3.8rem;
+		background-position-y: 45%;
+		background-size: 3.5rem;
+	}
+}

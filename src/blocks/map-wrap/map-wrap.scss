@@ -6,3 +6,9 @@
 [class*="copyrights-pane"]{
 	display: none;
 }
+
+@media (max-width: 48em) {
+	.map-wrap {
+		height: 59rem;
+	}
+}

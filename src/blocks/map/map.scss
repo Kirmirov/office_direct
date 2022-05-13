@@ -1,3 +1,9 @@
 .map {
-	
+    margin-top: -27rem;
+}
+
+@media (max-width: 48em) {
+	.map {
+		margin-top: 0;
+	}
 }

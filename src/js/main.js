@@ -51,6 +51,10 @@ const init = () => {
 		zoom: 15
 	});
 
+	window.addEventListener('resize', () => {
+		map.setCenter([43.20259659959205,27.9168840397141]);
+	});
+
 	const officeCenter 	= [43.200320445995864,27.91386387236333];
 	const seeCenter 	= [43.1950286176228,27.917849134096397];
 	const parkCenter 	= [43.202902178793,27.9231500132146];
@@ -63,9 +67,10 @@ const init = () => {
 	}, 
 	{
 		iconLayout: "default#image",
-		iconImageHref: "../img/map/office.png",
+		iconImageHref: "img/map/office.png",
 		iconImageSize: [99, 99],
-		iconImageOffset: [-50, -100]
+		iconImageOffset: [-50, -100],
+		hideIconOnBalloonOpen: false
 	});
 
 	map.geoObjects.add(officeMark);
@@ -79,12 +84,10 @@ const init = () => {
 	}, 
 	{
 		preset: 'islands#darkOrangeIcon',
-		iconImageSize: [99, 99],
 		iconImageOffset: [-50, -150]
 	});
 
 	map.geoObjects.add(seeMark);
-	seeMark.balloon.open();
 
 	let parkMark = new ymaps.Placemark(parkCenter, 
 	{
@@ -94,13 +97,10 @@ const init = () => {
 	}, 
 	{
 		preset: 'islands#violetCircleIcon',
-		iconImageSize: [99, 99],
-		iconImageOffset: [50, 100]
+		iconImageOffset: [600, 300]
 	});
 
 	map.geoObjects.add(parkMark);
-	parkMark.balloon.open();
-
 
 
 	map.controls.remove('geolocationControl');
@@ -116,3 +116,4 @@ const init = () => {
 
 ymaps.ready(init);
 	
+

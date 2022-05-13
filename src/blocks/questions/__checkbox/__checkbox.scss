@@ -31,6 +31,19 @@
 	&:not(:disabled):not(:checked)+.questions__label:hover::before {
 		background: #FFFFFF;
 	}
-	
+}
+
+@media (max-width: 48em) {
+	.questions__checkbox {
+		&+.questions__label::before{
+			width: 3.8rem;
+			height: 3.8rem;
+			border-radius: 0.8rem;
+		}
+
+		&:checked+.questions__label::before {
+			background: #2F80ED url("../img/questions/check.svg") no-repeat center / 2.5rem;
+		}
+	}
 }
 

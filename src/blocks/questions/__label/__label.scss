@@ -3,3 +3,10 @@
 	color: #576077;
 	
 }
+
+@media (max-width: 48em) {
+	.questions__label {
+		@include font (300, 2.2rem, 1.10);
+		padding-right: 12rem;
+	}
+}

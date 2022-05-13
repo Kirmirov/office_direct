@@ -1,3 +1,11 @@
 .questions__policy {
 	margin-top: 2rem;
 }
+
+@media (max-width: 48em) {
+	.questions__policy {
+		text-align: start;
+		padding-left: 3.5rem;
+		margin-top: 2.5rem;
+	}
+}

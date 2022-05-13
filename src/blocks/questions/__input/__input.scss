@@ -14,3 +14,11 @@
 		color: #FFFFFF;
 	}
 }
+
+@media (max-width: 48em) {
+	.questions__input {
+		padding-left: 10.5rem;
+		@include font (500, 2.8rem, 1.24);
+		letter-spacing: 0.2rem;
+	}
+}
