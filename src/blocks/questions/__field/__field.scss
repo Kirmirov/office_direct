@@ -1,6 +1,21 @@
 .questions__field {
 	width: 42.3rem;
 	height: 8.1rem;
+	position: relative;
+
+	&::before {
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		border-radius: 0.8rem;
+		z-index: -1;
+		background:#576077;
+		background-repeat: no-repeat;
+		background-position-x: 3.5rem;
+		background-position-y: 50%;
+		background-size: 2.5rem;
+	}
 }
 
 @media (max-width: 48em) {

@@ -21,6 +21,9 @@
 					<div class="header__burger">
 						<img src="img/header/burger-mobile.svg" alt="">
 					</div>
+					<div class="mobile-close">
+						<img src="img/mobile/close.svg" alt="">
+					</div>
 					<a href="#" class="header-logo header-logo-wrap">
 						<div class="header-logo__img">
 							<img src="img/header/logo.png" alt="">
@@ -30,13 +33,13 @@
 					<div class="header__find">
 						<input type="text" class="header__input header__input--bg" placeholder="Название модели или артикул">
 					</div>
-					<div class="header-phone header-phone-wrap " >
-						<div class="header-phone__img">
+					<div class="phone header-phone-wrap">
+						<div class="phone__img">
 							<img src="img/header/calling.svg" alt="">
 						</div>
-						<a href="tel:+74952210675" class="header-phone__text header-phone__text--color">+7 495 221-06-75</a>
+						<a href="tel:+74952210675" class="phone__text phone__text--color">+7 495 221-06-75</a>
 					</div>
-					<button class="button button-header button-header--color" type="button">Заказать звонок</button>
+					<button class="button-second button-second--color button-second--none" type="button">Заказать звонок</button>
 				</div>
 				<div class="header__menu">
 					<div class="header__navigation">
@@ -85,6 +88,26 @@
 					</div>
 				</div>
 
+			</div>
+			<div class="mobile">
+				<ul class="mobile__list">
+					<li>
+						<a class="mobile__item mobile__item--color" href="#">О продукте</a>
+					</li>
+					<li>
+						<a class="mobile__item mobile__item--color" href="#">Отзывы</a>
+					</li>
+					<li>
+						<a class="mobile__item mobile__item--color" href="#">Доставка и оплата</a>
+					</li>
+					<li>
+						<a class="mobile__item mobile__item--color" href="#">Контакты</a>
+					</li>
+				</ul>
+				<button class="button-second button-second--color button-second--mobile">Заказать звонок</button>
+				<div class="phone">
+					<a href="tel:+74952210675" class="phone__text phone__text--color">+7 495 221-06-75</a>
+				</div>
 			</div>
 		</div>
 
@@ -169,13 +192,41 @@
 			</div>
 		</section>
 
+		<section class="clients">
+			<div class="container">
+				<div class="clients__wrap">
+					<div class="clients__title title-document">Наши клиенты</div>
+					<div class="clients__img-box">
+						<div class="clients__img">
+							<img src="img/clients/rjd.png" alt="">
+						</div>
+						<div class="clients__img">
+							<img src="img/clients/nikel.png" alt="">
+						</div>
+						<div class="clients__img">
+							<img src="img/clients/bash.png" alt="">
+						</div>
+						<div class="clients__img">
+							<img src="img/clients/space.png" alt="">
+						</div>
+						<div class="clients__img">
+							<img src="img/clients/home.png" alt="">
+						</div>
+						<div class="clients__img">
+							<img src="img/clients/victory.png " alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="questions">
 			<div class="container">
 				<div class="questions__wrap">
 					<div class="questions__content">
 						<h2 class="questions__title title-document title-document--color">У вас остались вопросы?</h2>
 						<div class="questions__desc">Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</div>
-						<form class="questions__form" action="#" id="questions-form" method="POST">
+						<form class="questions__form" action="#" id="questions-form" method="">
 
 							<div class="questions__align">
 								<div class="questions__field">
@@ -202,9 +253,7 @@
 		</section>
 
 		<section class="map">
-			<div id="map" class="map-wrap">
-				
-			</div>
+			<div id="map" class="map-wrap"></div>
 		</section>
 
 	</main>
@@ -212,6 +261,18 @@
 	<footer class="footer">
 
 	</footer>
+
+	<div class="modal modal--style">
+		<div class="modal__inner modal__inner--style">
+			<div class="modal__img">
+				<img src="img/modal/done.svg" alt="">
+			</div>
+			<div class="modal__text">
+				<div class="modal__header title-document">Ваша заявка принята</div>
+				<div class="modal__desc modal__desc--color">В ближайшее время наш менеджер свяжется с Вами</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

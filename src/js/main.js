@@ -51,10 +51,6 @@ const init = () => {
 		zoom: 15
 	});
 
-	window.addEventListener('resize', () => {
-		map.setCenter([43.20259659959205,27.9168840397141]);
-	});
-
 	const officeCenter 	= [43.200320445995864,27.91386387236333];
 	const seeCenter 	= [43.1950286176228,27.917849134096397];
 	const parkCenter 	= [43.202902178793,27.9231500132146];
@@ -72,6 +68,8 @@ const init = () => {
 		iconImageOffset: [-50, -100],
 		hideIconOnBalloonOpen: false
 	});
+
+	
 
 	map.geoObjects.add(officeMark);
 	officeMark.balloon.open();
@@ -102,7 +100,6 @@ const init = () => {
 
 	map.geoObjects.add(parkMark);
 
-
 	map.controls.remove('geolocationControl');
 	map.controls.remove('searchControl');
 	map.controls.remove('trafficControl');
@@ -112,8 +109,62 @@ const init = () => {
 	map.controls.remove('rulerControl');
 	map.behaviors.disable(['scrollZoom']);
 
+	window.addEventListener('resize', () => {
+		map.setCenter([43.20259659959205,27.9168840397141]);
+	});
+
 }
 
 ymaps.ready(init);
-	
 
+
+const mobileMenu = () => {
+	const buttonOpen 	= document.querySelector('.header__burger');
+	const buttonClose 	= document.querySelector('.mobile-close');
+	const menuBody 		= document.querySelector('.mobile');
+
+	buttonOpen.addEventListener('click', () => {
+		buttonOpen.style.display 	= "none";
+		buttonClose.style.display 	= "block";
+		menuBody.style.display 		= "flex";
+	});
+
+	buttonClose.addEventListener('click', () => {
+		buttonOpen.style.display 	= "block";
+		buttonClose.style.display 	= "none";
+		menuBody.style.display 		= "none";
+	});
+}
+
+mobileMenu();
+	
+const modal = (modalSelector, buttonsSelectors = []) => {
+
+	const modal 	= document.querySelector(modalSelector);
+	const buttons 	= [];
+
+	modal.addEventListener('click', (evt) => {
+		let target = evt.target;
+		if (target.matches('.modal')) {
+			modal.style.display = 'none';
+		}
+	});
+
+	buttonsSelectors.forEach((selector) => {
+		let buton = document.querySelector(selector);
+		buttons.push(buton);
+	});
+
+	buttons.forEach((buton) => {
+		buton.addEventListener('click', () => {
+			modal.style.display = 'block';
+			setTimeout(() => {
+				modal.style.display = 'none';
+			}, 2000);
+		});
+	});
+
+
+}
+
+modal('.modal', ['.button-second--none', '.record__button', '.questions__button']);

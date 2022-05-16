@@ -1,0 +1,10 @@
+.clients__title {
+	padding-top: 2.5rem;
+	margin-bottom: 3.5rem;
+}
+
+@media (max-width: 48em) {
+	.clients__title {
+		margin-bottom: 5.5rem;
+	}
+}

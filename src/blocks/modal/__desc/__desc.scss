@@ -1,0 +1,6 @@
+.modal__desc {
+	max-width: 45rem;
+	margin: 0 auto;
+	letter-spacing: 0;
+	@include font (400, 2rem, 1.00)
+}

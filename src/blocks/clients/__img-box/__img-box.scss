@@ -1,0 +1,14 @@
+.clients__img-box{
+	display: grid;
+    grid-template-columns: repeat(6, 18.5rem);
+    align-items: center;
+}
+
+@media (max-width: 48em) {
+	.clients__img-box{
+		grid-template-columns: repeat(2,32rem);
+    	grid-template-rows: repeat(3, 1fr);
+		justify-items: center;
+    	align-items: center;
+	}
+}

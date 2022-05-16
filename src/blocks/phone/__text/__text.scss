@@ -1,0 +1,10 @@
+.phone__text {
+	@include font (500, 1.9rem, 1.40);
+}
+
+@media (max-width: 48em) {
+	.phone__text {
+		@include font (500, 2.8rem, 1.40);
+		text-decoration-line: underline;
+	}
+}

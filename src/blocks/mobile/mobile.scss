@@ -1,0 +1,20 @@
+.mobile {
+	position: fixed;
+	z-index: 100;
+	top: 8rem;
+	left: 0;
+	right: 0;
+	padding-top: 10.8rem;
+	padding-bottom: 4rem;
+	@include centered;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.04);
+	display: none;
+}
+
+@media (max-width: 20em) {
+	.mobile {
+		top: 8.5rem;
+	}
+}
