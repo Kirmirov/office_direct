@@ -1,0 +1,31 @@
+.slider__arrow {
+	width: 5rem;
+	height: 5rem;
+	@include centered;
+	border-radius: 50%;
+	background: #FFFFFF;
+	box-shadow: 0rem 1.2rem 2rem -.8rem rgba(68, 88, 104, 0.25);
+	position: absolute;
+	z-index: 20;
+	cursor: pointer;
+
+	&:hover {
+		border: .1rem solid #D2EBFF;
+		box-shadow: 0 1.2rem 2rem -.8rem rgba(0, 116, 212, 0.35);
+	}
+
+	img {
+		width: 30%;
+		height: 30%;
+	}
+
+	&:nth-child(1) {
+		top: 46%;
+		left: 3%;
+	}
+	&:nth-child(2) {
+		top: 46%;
+		right: 3%;
+		transform: rotate(180deg);
+	}
+}

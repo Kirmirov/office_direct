@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/swiper-bundle.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/swiper-bundle.js" defer></script>
 	<script src="./js/main.js" defer></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=e8e22726-2a93-4374-96e8-d6b2b2177326&lang=ru_RU" type="text/javascript">
 	</script>
@@ -114,6 +116,38 @@
 	</header>
 
 	<main class="main">
+
+		<section class="slider swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slider__slide">
+					<div class="container">
+						<div class="slider__wrap">
+							<div class="slider__header">
+								<h1 class="slider__title title-document">Кресла Samurai <strong>на выгодных условиях</strong> по всей стране </h1>
+								<div class="slider__img">
+									<img src="img/slider/ru-flag.png" alt="">
+								</div>
+							</div>
+							
+							<div class="slider__desc">Здесь вам не придется покупать товар в слепую — проведите тест-драйв перед покупкой</div>
+							<button class="slider__button button-main">Запись на тест-драйв</button>
+						</div>
+					</div>
+					<div class="slider__back">
+						<img src="img/slider/back.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="slider__nav">
+				<div class="slider__arrow slider-arrow-left">
+					<img src="img/slider/arrow.png" alt="">
+				</div>
+				<div class="slider__arrow slider-arrow-right">
+					<img src="img/slider/arrow.png" alt="">
+				</div>
+			</div>
+			<div class="slider__pagination"></div>
+		</section>
 
 		<section class="delivery">
 			<div class="container">
@@ -265,7 +299,7 @@
 	<div class="modal modal--style">
 		<div class="modal__inner modal__inner--style">
 			<div class="modal__img">
-				<img src="img/modal/done.svg" alt="">
+				<img src="img/modal/done.png" alt="">
 			</div>
 			<div class="modal__text">
 				<div class="modal__header title-document">Ваша заявка принята</div>

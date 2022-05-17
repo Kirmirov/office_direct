@@ -1,0 +1,5 @@
+.slider__desc {
+	@include font (400, 2.1rem, 1.60);
+	color: $main-text-color;
+	margin-bottom: 3.1rem;
+}

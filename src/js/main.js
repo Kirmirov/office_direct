@@ -13,6 +13,7 @@ const copyElem = (elemClass, elemCount) => {
 
 
 copyElem('a.cart', 7);
+copyElem('.slider__slide', 4);
 
 
 const selectControl = (selectID) => 
@@ -144,8 +145,9 @@ const modal = (modalSelector, buttonsSelectors = []) => {
 	const buttons 	= [];
 
 	modal.addEventListener('click', (evt) => {
-		let target = evt.target;
-		if (target.matches('.modal')) {
+		if (evt.target.matches('.modal')) 
+		{
+			document.body.style.position = 'inherit';
 			modal.style.display = 'none';
 		}
 	});
@@ -158,13 +160,52 @@ const modal = (modalSelector, buttonsSelectors = []) => {
 	buttons.forEach((buton) => {
 		buton.addEventListener('click', () => {
 			modal.style.display = 'block';
+			document.body.style.position = 'fixed';
 			setTimeout(() => {
 				modal.style.display = 'none';
+				document.body.style.position = 'inherit';
 			}, 2000);
 		});
 	});
-
-
 }
 
 modal('.modal', ['.button-second--none', '.record__button', '.questions__button']);
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	loop: true,
+	effect: 'flip',
+	grabCursor: true,
+	slideToClickedSlide: true,
+	
+	// If we need pagination
+	pagination: {
+		el: '.slider__pagination',
+		clickable: true
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.slider-arrow-left',
+		prevEl: '.slider-arrow-right',
+	},
+});
+
+const hoverImg = (imgWrapSelector, newImgURL) => {
+
+	const imgWrap = document.querySelector(imgWrapSelector);
+	const img =	imgWrap.querySelector('img');
+	let oldImgURL;
+
+	imgWrap.addEventListener('mouseover', () => {
+		oldImgURL = img.src;
+		img.src = newImgURL;
+	});
+
+	imgWrap.addEventListener('mouseout', () => {
+		img.src = oldImgURL;
+	});
+}
+
+hoverImg('.slider-arrow-left', 'img/slider/arrow-blue.png');
+hoverImg('.slider-arrow-right', 'img/slider/arrow-blue.png');
