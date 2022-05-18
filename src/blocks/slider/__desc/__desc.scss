@@ -3,3 +3,9 @@
 	color: $main-text-color;
 	margin-bottom: 3.1rem;
 }
+
+@media (max-width: 48em) {
+	.slider__desc {
+		display: none;
+	}
+}

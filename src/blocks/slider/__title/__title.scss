@@ -7,3 +7,11 @@
 		font-weight: 900;
 	}
 }
+
+@media (max-width: 48em) {
+	.slider__title {
+		font-size: 3.4rem;
+		font-weight: 500;
+    	letter-spacing: 0;
+	}
+}

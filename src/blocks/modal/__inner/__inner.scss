@@ -6,5 +6,12 @@
 	text-align: center;	
 	padding-top: 18rem;
 	z-index: 200;
-	
+}
+
+@media (max-width: 48em) {
+	.modal__inner {
+		width: 52rem;
+		height: 27.8rem;
+		padding-top: 9rem;
+	}
 }

@@ -2,3 +2,9 @@
 	padding-top: 14.7rem;
 	padding-bottom: 19rem;
 }
+
+@media (max-width: 48em) {
+	.clients {
+		padding-bottom: 12rem;
+	}
+}

@@ -1,9 +1,9 @@
 .slider__pagination {
 	position: absolute;
-	left: 97.1% !important;
-	top: 94%;
+	display: flex;
+	justify-content: center;
+	top: 60.5rem;
 	z-index: 20;
-	transform: translate(-50%, 0) !important;
 
 	.swiper-pagination-bullet {
 		width: .6rem;
@@ -14,5 +14,15 @@
 
 	.swiper-pagination-bullet-active {
 		background-color: #2B3350;
+	}
+}
+
+@media (max-width: 48em) {
+	.slider__pagination {
+		top: 37.4rem;
+	}
+	.swiper-pagination-bullet {
+		width: .8rem !important;
+		height: .8rem !important;
 	}
 }

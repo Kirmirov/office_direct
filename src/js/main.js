@@ -147,7 +147,8 @@ const modal = (modalSelector, buttonsSelectors = []) => {
 	modal.addEventListener('click', (evt) => {
 		if (evt.target.matches('.modal')) 
 		{
-			document.body.style.position = 'inherit';
+			document.body.style.height = '';
+			document.body.style.overflow = '';
 			modal.style.display = 'none';
 		}
 	});
@@ -160,10 +161,12 @@ const modal = (modalSelector, buttonsSelectors = []) => {
 	buttons.forEach((buton) => {
 		buton.addEventListener('click', () => {
 			modal.style.display = 'block';
-			document.body.style.position = 'fixed';
+			document.body.style.height = '100%';
+			document.body.style.overflow = 'hidden';
 			setTimeout(() => {
 				modal.style.display = 'none';
-				document.body.style.position = 'inherit';
+				document.body.style.height = '';
+				document.body.style.overflow = '';
 			}, 2000);
 		});
 	});
@@ -186,8 +189,8 @@ const swiper = new Swiper('.swiper', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.slider-arrow-left',
-		prevEl: '.slider-arrow-right',
+		nextEl: '.slider-arrow-right',
+		prevEl: '.slider-arrow-left',
 	},
 });
 
