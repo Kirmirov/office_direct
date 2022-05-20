@@ -106,7 +106,7 @@
 						<a class="mobile__item mobile__item--color" href="#">Контакты</a>
 					</li>
 				</ul>
-				<button class="button-second button-second--color button-second--mobile">Заказать звонок</button>
+				<button class="mobile__button-second button-second button-second--color button-second--mobile">Заказать звонок</button>
 				<div class="phone">
 					<a href="tel:+74952210675" class="phone__text phone__text--color">+7 495 221-06-75</a>
 				</div>
@@ -261,14 +261,13 @@
 					<div class="questions__content">
 						<h2 class="questions__title title-document title-document--color">У вас остались вопросы?</h2>
 						<div class="questions__desc">Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</div>
-						<form class="questions__form" action="#" id="questions-form" method="">
-
+						<form class="questions__form" action="#" id="questions-form" method="POST">
 							<div class="questions__align">
 								<div class="questions__field">
-									<input id="user-name" type="text" class="questions__input questions__input--bg-user" placeholder="Ваше имя">
+									<input id="user-name" name="user-name" type="text" class="questions__input questions__input--bg-user" placeholder="Ваше имя">
 								</div>
 								<div class="questions__field">
-									<input id="user-phone" type="tel" class="questions__input questions__input--bg-tel" placeholder="Телефон для связи">
+									<input id="user-phone" name="user-phone" type="tel" class="questions__input questions__input--bg-tel" placeholder="Телефон для связи">
 								</div>
 								<button type="submit" class="questions__button button-main">Заказать звонок</button>
 							</div>
@@ -284,7 +283,6 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 
 		<section class="map">

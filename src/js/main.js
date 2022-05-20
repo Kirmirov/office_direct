@@ -172,7 +172,7 @@ const modal = (modalSelector, buttonsSelectors = []) => {
 	});
 }
 
-modal('.modal', ['.button-second--none', '.record__button', '.questions__button']);
+modal('.modal', ['.mobile__button-second','.button-second--none', '.record__button', '.questions__button']);
 
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
@@ -212,3 +212,37 @@ const hoverImg = (imgWrapSelector, newImgURL) => {
 
 hoverImg('.slider-arrow-left', 'img/slider/arrow-blue.png');
 hoverImg('.slider-arrow-right', 'img/slider/arrow-blue.png');
+
+const sendForm = (formSelector) => {
+
+	const form = document.querySelector(formSelector);
+
+	const sendData = (data) => {
+		return fetch ('mail.php', {
+			method: 'POST',
+			body: JSON.stringify(data),
+			headers: {
+				'Content-type': 'application/json; charset=UTF-8'
+			}
+		})
+		.then(res => res.json());
+	};
+
+
+	form.addEventListener('submit', (evt) => 
+	{
+		evt.preventDefault();
+		const dataForm = new FormData(form);
+		const user = {};
+
+		dataForm.forEach((input, index) => {
+			user[index] = input;
+		});
+
+		sendData(user);
+
+		form.reset();
+	});
+}
+
+sendForm('#questions-form');
