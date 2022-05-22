@@ -1,5 +1,7 @@
 'use strict'
 
+AOS.init();
+
 const copyElem = (elemClass, elemCount) => {
 	const foundElem = document.querySelector(elemClass);
 	

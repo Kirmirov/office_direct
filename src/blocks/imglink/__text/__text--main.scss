@@ -1,0 +1,9 @@
+.imglink__text--main {
+	color: $main-text-color;
+}
+
+@media (max-width: 48em) {
+	.imglink__text--main {
+		color: #0074D4;
+	}	
+}

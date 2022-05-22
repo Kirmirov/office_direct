@@ -32,11 +32,11 @@ try {
   $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'mr.aruter@gmail.com'; // Логин на почте
-  $mail->Password   = 'wsmqvshktnjdcjfi'; // Пароль 
-  $mail->SMTPSecure = 'ssl';
-  $mail->Port       = 465;
+  $mail->Host       = ''; // SMTP сервера вашей почты
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль 
+  $mail->SMTPSecure = '';
+  $mail->Port       = ;
 
   $mail->setFrom('mr.aruter@gmail.com', 'Сухарев Кирилл'); // Адрес самой почты и имя отправителя
 

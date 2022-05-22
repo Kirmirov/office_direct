@@ -1,0 +1,13 @@
+@media (min-width: 48em) {
+	.footer__politics--mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 48em) {
+	.footer__politics--mobile {
+		display: block;
+		width: 42rem;
+		font-size: 2.6rem;
+	}
+}

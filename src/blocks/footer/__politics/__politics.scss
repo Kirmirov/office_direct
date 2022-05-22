@@ -1,0 +1,11 @@
+.footer__politics {
+	@include font (500, 1.4rem, 1.80);
+	width: 23rem;
+	color: #959aae;
+}
+
+@media (max-width: 48em) {
+	.footer__politics {
+		display: none;
+	}
+}

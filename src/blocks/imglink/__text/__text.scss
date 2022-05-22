@@ -1,0 +1,9 @@
+.imglink__text {
+	@include font (500, 2rem, 1.40);
+}
+
+@media (max-width: 48em) {
+	.imglink__text {
+		@include font (500, 2.8rem, 1.40);
+	}
+}

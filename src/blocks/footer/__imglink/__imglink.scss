@@ -1,0 +1,19 @@
+.footer__imglink {
+	&:nth-child(1) {
+		margin-bottom: 1.2rem;
+	}
+	&:nth-child(2) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (max-width: 48em) {
+	.footer__imglink {
+		&:nth-child(1) {
+			margin-bottom: 2.4rem;
+		}
+		&:nth-child(2) {
+			margin-bottom: 3rem;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.footer__text{
+	font-size: 1.7rem;
+	margin-left: 1rem;
+}
+
+@media (max-width: 48em) {
+	.footer__text{
+		font-size: 3rem;
+		margin-left: 0;
+		letter-spacing: -0.5px;
+	}
+}

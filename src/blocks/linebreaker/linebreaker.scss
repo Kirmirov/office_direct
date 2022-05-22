@@ -1,3 +1,5 @@
-.linebreaker {
-	white-space: nowrap;
+@media (max-width: 48em) {
+	.linebreaker {
+		display: block;
+	}
 }

@@ -1,0 +1,8 @@
+.navigation__link {
+	@include font (500, 1.6rem, 1.40);
+	color: $main-text-color;
+}
+
+@media (max-width: 48em) {
+	
+}

@@ -1,0 +1,30 @@
+.footer__item {
+	display: flex;
+	flex-direction: column;
+
+	&:nth-child(1) {
+		width: 25%;
+	}
+	&:nth-child(2) {
+		width: 20%;
+	}
+	&:nth-child(3) {
+		width: 55%;
+	}
+}
+
+@media (max-width: 48em) {
+	.footer__item {
+		&:nth-child(1) {
+			width: 100%;
+		}
+		&:nth-child(2) {
+			width: 100%;
+			margin-bottom: 4rem;
+		}
+		&:nth-child(3) {
+			width: 100%;
+			margin-bottom: 3.4rem;
+		}
+	}
+}

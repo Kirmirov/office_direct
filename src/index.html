@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/aos.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/aos.js" defer></script>
 	<script src="./js/swiper-bundle.js" defer></script>
 	<script src="./js/main.js" defer></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=e8e22726-2a93-4374-96e8-d6b2b2177326&lang=ru_RU" type="text/javascript">
@@ -26,20 +28,20 @@
 					<div class="mobile-close">
 						<img src="img/mobile/close.svg" alt="">
 					</div>
-					<a href="#" class="header-logo header-logo-wrap">
-						<div class="header-logo__img">
+					<a href="#" class="header__logo logo">
+						<div class="logo__img">
 							<img src="img/header/logo.png" alt="">
 						</div>
-						<div class="header-logo__text header-logo__text--color">кресла samurai</div>
+						<div class="logo__text logo__text--color">кресла samurai</div>
 					</a>
 					<div class="header__find">
 						<input type="text" class="header__input header__input--bg" placeholder="Название модели или артикул">
 					</div>
-					<div class="phone header-phone-wrap">
-						<div class="phone__img">
-							<img src="img/header/calling.svg" alt="">
+					<div class="imglink header__imglink">
+						<div class="imglink__img">
+							<img src="img/imglink/calling.svg" alt="">
 						</div>
-						<a href="tel:+74952210675" class="phone__text phone__text--color">+7 495 221-06-75</a>
+						<a href="tel:+74952210675" class="imglink__text imglink__text--main header__imglink-text imglink__text--under">+7 495 221-06-75</a>
 					</div>
 					<button class="button-second button-second--color button-second--none" type="button">Заказать звонок</button>
 				</div>
@@ -49,11 +51,11 @@
 							<img class="menu__img" src="img/header/burger.svg" alt="">
 							<span class="menu__text">Каталог</span>
 						</button>
-						<nav class="header__nav">
-							<a href="#" class="header__link">О продукте</a>
-							<a href="#" class="header__link">Отзывы</a>
-							<a href="#" class="header__link">Доставка и оплата</a>
-							<a href="#" class="header__link">Контакты</a>
+						<nav class="navigation">
+							<a href="#" class="navigation__link header__link">О продукте</a>
+							<a href="#" class="navigation__link header__link">Отзывы</a>
+							<a href="#" class="navigation__link header__link">Доставка и оплата</a>
+							<a href="#" class="navigation__link header__link">Контакты</a>
 						</nav>
 					</div>
 					<div class="header__shop">
@@ -156,7 +158,7 @@
 
 					<div class="delivery__block delivery__block-left">
 						<div class="delivery__img-wrap">
-							<div class="delivery__img">
+							<div class="delivery__img" data-aos="zoom-in-right">
 								<img src="img/delivery/trolley.png" alt="">
 							</div>
 						</div>
@@ -165,7 +167,7 @@
 					</div>
 					<div class="delivery__block delivery__block-center">
 						<div class="delivery__img-wrap">
-							<div class="delivery__img">
+							<div class="delivery__img" data-aos="zoom-in-right">
 								<img src="img/delivery/chess.png" alt="">
 							</div>
 						</div>
@@ -174,7 +176,7 @@
 					</div>
 					<div class="delivery__block delivery__block-right">
 						<div class="delivery__img-wrap">
-							<div class="delivery__img">
+							<div class="delivery__img" data-aos="zoom-in-right">
 								<img src="img/delivery/discount.png" alt="">
 							</div>
 						</div>
@@ -218,7 +220,7 @@
 					<div class="record__text">
 						<h2 class="record__title title-document">Посетите салон и проведите тест-драйв лично</h2>
 						<div class="record__desc">У нас есть шоурумы в Москве и Санкт-Петербурге, где мы всегда рады видеть вас. Дат профессиональную консультацию и поделиться экспертизой</div>
-						<button class="record__button button-main">Запись на тест-драйв</button>
+						<button class="record__button button-main" data-aos="flip-left">Запись на тест-драйв</button>
 					</div>
 					<div class="record__img">
 						<img src="img/record/main.png" alt="">
@@ -232,22 +234,22 @@
 				<div class="clients__wrap">
 					<div class="clients__title title-document">Наши клиенты</div>
 					<div class="clients__img-box">
-						<div class="clients__img">
+						<div class="clients__img"  data-aos="fade-down-right">
 							<img src="img/clients/rjd.png" alt="">
 						</div>
-						<div class="clients__img">
+						<div class="clients__img" data-aos="fade-up-left">
 							<img src="img/clients/nikel.png" alt="">
 						</div>
-						<div class="clients__img">
+						<div class="clients__img" data-aos="fade-down-left">
 							<img src="img/clients/bash.png" alt="">
 						</div>
-						<div class="clients__img">
+						<div class="clients__img" data-aos="fade-down-right">
 							<img src="img/clients/space.png" alt="">
 						</div>
-						<div class="clients__img">
+						<div class="clients__img" data-aos="fade-down-left">
 							<img src="img/clients/home.png" alt="">
 						</div>
-						<div class="clients__img">
+						<div class="clients__img" data-aos="fade-up-left">
 							<img src="img/clients/victory.png " alt="">
 						</div>
 					</div>
@@ -292,7 +294,50 @@
 	</main>
 
 	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<div class="footer__item">
+					<a href="#" class="logo footer__logo">
+						<div class="logo__wrap">
+							<div class="logo__img footer__img">
+								<img src="img/footer/logo.png" alt="">
+							</div>
+						</div>
+					</a>
+					<div class="footer__politics">Политика конфиденциальности <span class="linebreaker">© 2021 Все права защищены</span></div>
+				</div>
+				<div class="footer__item">
+					<nav class="navigation navigation--column">
+						<a href="#" class="navigation__link footer__link navigation__link--light">О продукте</a>
+						<a href="#" class="navigation__link footer__link navigation__link--light">Отзывы</a>
+						<a href="#" class="navigation__link footer__link navigation__link--light">Доставка и оплата</a>
+						<a href="#" class="navigation__link footer__link navigation__link--light">Контакты</a>
+					</nav>
+				</div>
+				<div class="footer__item">
+					<div class="imglink footer__imglink">
+						<div class="imglink__img imglink__img--rotate imglink__img--m-none">
+							<img src="img/imglink/calling.svg" alt="">
+						</div>
+						<a href="tel:+74952210675" class="imglink__text imglink__text--light">+7 495 221-06-75</a>
+					</div>
+					<div class="imglink footer__imglink">
+						<div class="imglink__img imglink__img--small imglink__img--m-none">
+							<img src="img/imglink/mail.svg" alt="">
+						</div>
+						<a href="tel:+74952210675" class="imglink__text imglink__text--light footer__text">zakaz@kresla-samurai.ru</a>
+					</div>
+					<div class="imglink footer__imglink">
+						<div class="imglink__img imglink__img--small imglink__img--m-none">
+							<img src="img/imglink/mark.svg" alt="">
+						</div>
+						<a href="tel:+74952210675" class="imglink__text imglink__text--light footer__text">ул. Красного курсанта д.25, лит.в,<span class="linebreaker">оф. 114, бизнес-центр "RED </span><span class="linebreaker"> CADET"</span></a>
+					</div>
 
+				</div>
+				<div class="footer__politics footer__politics--mobile">Политика конфиденциальности <span class="linebreaker">© 2021 Все права защищены</span></div>
+			</div>
+		</div>
 	</footer>
 
 	<div class="modal modal--style">
